@@ -57,6 +57,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        status: {
+          running: "hsl(var(--status-running))",
+          idle: "hsl(var(--status-idle))",
+          maintenance: "hsl(var(--status-maintenance))",
+          offline: "hsl(var(--status-offline))",
+          error: "hsl(var(--status-error))",
+        },
+        dashboard: {
+          surface: "hsl(var(--dashboard-surface))",
+          border: "hsl(var(--dashboard-border))",
+        },
+        metric: {
+          positive: "hsl(var(--metric-positive))",
+          warning: "hsl(var(--metric-warning))",
+          critical: "hsl(var(--metric-critical))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,6 +1,21 @@
-# Welcome to your Lovable project
+# Machine Monitoring Dashboard
 
-## Project info
+A modern, interactive web application for visualizing manufacturing machine hierarchies and monitoring operations in real-time.
+
+## Project Overview
+
+This dashboard provides a comprehensive view of manufacturing operations organized in a hierarchical structure: Sites → Departments → Machines. Built with React, TypeScript, and TailwindCSS for a clean, industrial design.
+
+## Features
+
+- **Hierarchical Visualization**: Expandable tree structure showing Sites, Departments, and Machines
+- **Real-time Status Monitoring**: Color-coded status indicators (Running, Idle, Maintenance, Offline, Error)
+- **Advanced Filtering**: Filter machines by status and search by name or type
+- **Detailed Machine Views**: Click any machine for comprehensive performance metrics
+- **Dashboard Summary**: Overview cards showing total machines, running status, and alerts
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+
+## Live Demo
 
 **URL**: https://lovable.dev/projects/f3ddac66-ab38-4a1b-a3df-a0a53c275610
 
@@ -50,15 +65,29 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Technical Stack
 
-This project is built with:
+This project is built with modern web technologies:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Frontend**: React 18 with TypeScript
+- **Styling**: TailwindCSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **Build Tool**: Vite for fast development and building
+- **Date Handling**: date-fns for time formatting
+- **Icons**: Lucide React for consistent iconography
+
+## Data Structure
+
+The application uses a hierarchical mock data structure:
+
+```typescript
+Sites → Departments → Machines
+```
+
+Each machine includes:
+- Status (Running, Idle, Maintenance, Offline, Error)
+- Performance metrics (Efficiency, Uptime, Temperature, Pressure)
+- Metadata (Type, Serial Number, Last Updated)
 
 ## How can I deploy this project?
 
